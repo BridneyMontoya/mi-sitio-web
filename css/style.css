@@ -1,25 +1,285 @@
-header{
-    color: #00f;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
+
+*{
+    margin: 0%; padding: 0%;
+    
 }
 
-body{
-    background-color: #ffff;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    margin: 10px;
-    padding: 5px;
+/*HEADER*/
+
+li{
+
+    float: left;
+    list-style: none;
+    padding: 20px;
+    font-family: 'Prociono', serif;
+    
+   
 }
 
 nav{
+    float: right;
+    margin-right: 70px;
+    
+
+   
+   
+}
+a{
+    text-decoration: none;
+    color: white;
+      
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #D99D44;
+}
+
+ header{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    height: 100vh;
+   background: url("/img/1.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   position: relative;
+   overflow: hidden;
+ }
+ .content-header {
+
+    position: absolute;
+    top:40%;
+    left: 25%;
+    text-align: center;
+    color: #ffffff;
+   
+    
+ }
+
+ .content-header h3{
+    font-size: 50px;
+ }
+
+.content-header p{
+    font-family: prociono;
+}
+
+/* MAIN */
+
+/* DESCRIPCION */
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto ;
+    overflow: hidden;
+}
+.titulos-contentp{
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.titulos-content{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+ 
+.contenido-historia{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imag-historia{
+    width: 48%;
+}
+
+
+.contenido-historia .contenedor-texto{
+    width: 48%;
+    padding-left: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contenedor-texto p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contenedor-texto p{
+    color: #A0662F;
+}
+
+/* GALERIA */
+
+ 
+.contenedor h2:hover{
+    text-decoration: underline;
+    color: #D99D44;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contenido-galeria{
+    background-color: #ECD6C0 ;
+    width: 100%;
+    margin: auto;
+ 
+}
+
+.galeria-galery{
+    display: flex;
+    justify-content: space-evenly;
+    width: 33.333%;
     float: left;
-    width: 20%;
-    height: auto;
-    background: #ccc;
-    padding: 5px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    
 }
-ul{
-    list-style-type:none;
-    padding: 0%;
+
+
+
+
+.imag1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
+
+.img{
+    width: 100%;
+    
+}
+
+/* SERVICIOS */
+.servicio-cont{
+    width: 100%;
+    margin: auto;
+}
+
+.servicio-individual{
+    width: 33.333%;
+    float: left;
+    padding: 5px 5px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.servicio-individual p{
+    color: #A0662F;
+    font-family: prociono;
+    font-size: small;
+
+}
+
+.servicio-individual h3{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    
+}
+
+/* FOOTER */
+
+.contenido-foot{
+    
+    padding: 30px 0 20px 0;
+    margin: auto ;
+    overflow: hidden;
+}
+
+.contenido-footer{
+    background-color: #ECD6C0;
+}
+
+.texto-final{
+    background-color: #243036;
+}
+.texto-final h4{
+    color: white;
+}
+
+
+
+/*  PAGINA GALERIA */
+.titulo-galeria{
+    position: absolute;
+    top:40%;
+    left: 40%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 80px;
+  
+
+}
+
+.header-galeria{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    height: 100vh;
+   background: url("/img/dipilto2.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   position: relative;
+   overflow: hidden;
+ }
+
+ .main-galeria{
+    padding: 100px;
+   
+ }
+
+ .menu-galeria{
+   font-weight: bold;
+   transition: 0.5s ease;
+   
+  
+   
+ }
+
+ .active{
+    font-size: 30px;  
+    font-family: 'Oleo Script Swash Caps', cursive;
+    padding-left: 18%;
+    cursor: pointer;
+    
+    
+       
+ }.active:hover{
+    text-decoration: underline;
+    color: #D99D44;  
+       
+ }
+
+ .img-items{
+   width: 100%;
+ }
+
+ .img-items .items{
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+ }
+
+ .img-items .items img{
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   padding-left: 98px;
+ }
+ 
+ .boton{
+    display: block;
+    background-color: #D99D44;
+    justify-self: center;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 100px  100px;
+ }
+
+
