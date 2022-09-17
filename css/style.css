@@ -220,7 +220,7 @@ a:hover{
 .header-galeria{
     font-family: 'Oleo Script Swash Caps', cursive;
     height: 100vh;
-   background: url("/img/dipilto2.jpg");
+   background: url("../img/dipilto2.jpg");
    background-repeat: no-repeat;
    background-position: center;
    position: relative;
